@@ -7,7 +7,7 @@ useHead({
   title: "Ray Hackshaw",
   script: [
     {
-      src: "https://app.denki.co.nz/script.js",
+      src: "https://sibyl.tom.so/script.js",
       "data-website-id": "a9f957ff-3d8a-4175-b581-f6308e171a19",
     },
   ],
@@ -93,12 +93,6 @@ useHead({
             </div>
           </NuxtLink>
         </div>
-      </div>
-      <div class="absolute bottom-4 py-4 flex gap-1">
-        <p class="text-white">Analytics powered by</p>
-        <NuxtLink to="https://denki.co.nz/" class="underline text-white"
-          >Denki</NuxtLink
-        >
       </div>
     </div>
   </main>
