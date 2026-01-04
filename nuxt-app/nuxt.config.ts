@@ -1,15 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-
-  routeRules: {
-    // prerender index route by default
-    "/": { prerender: true },
+  ssr: false,
+  nitro: {
+    preset: "static",
   },
+  devtools: { enabled: false },
   typescript: {
     typeCheck: true,
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/image"],
+  modules: ["@nuxtjs/google-fonts"],
   css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
@@ -25,11 +24,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      "Work+Sans": true,
+      "Stack+Sans+Text": true,
     },
-  },
-  image: {
-    // Options
-    quality: 100,
   },
 });
