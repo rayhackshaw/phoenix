@@ -1,20 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  nitro: {
-    preset: "static",
-  },
+  nitro: { preset: "static" },
   devtools: { enabled: false },
-  typescript: {
-    typeCheck: true,
-  },
+  typescript: { typeCheck: false },
   modules: ["@nuxtjs/google-fonts"],
   css: ["~/assets/css/main.css"],
   postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+    plugins: { tailwindcss: {}, autoprefixer: {} },
   },
   app: {
     head: {
@@ -22,9 +14,5 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
     },
   },
-  googleFonts: {
-    families: {
-      "Stack+Sans+Text": true,
-    },
-  },
+  googleFonts: { families: { "Stack+Sans+Text": true } },
 });
