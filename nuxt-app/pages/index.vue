@@ -27,7 +27,7 @@ useHead({
 
         <div class="flex gap-4 absolute left-0 md:left-auto md:right-0 top-8 md:top-0 justify-center py-4 md:p-4 w-fit">
           <div>
-            <NuxtLink to="https://github.com/Ray-Hackshaw" target="_blank">
+            <NuxtLink to="https://github.com/rayhackshaw" target="_blank">
               <div class="text-black">
                 <p>Github</p>
               </div>
